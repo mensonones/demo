@@ -1,14 +1,14 @@
 # demo
 Repositório de um simples projeto para gerar uma imagem docker do mesmo. 
 
-##Plugin Spotify
+## Plugin Spotify
 ```xml
 <plugin>
-		<groupId>com.spotify</groupId>
-		<artifactId>dockerfile-maven-plugin</artifactId>
-		<configuration>
-			<repository>demo/${project.artifactId}-app</repository>
-		</configuration>
+  <groupId>com.spotify</groupId>
+  <artifactId>dockerfile-maven-plugin</artifactId>
+  <configuration>
+   <repository>demo/${project.artifactId}-app</repository>
+  </configuration>
 </plugin>
 ```
 Para gerar o artefato e a imagem docker da aplicação, use o comando: mvn clean package dockerfile:build
@@ -20,14 +20,14 @@ Para gerar o artefato e a imagem docker da aplicação, use o comando: mvn clean
 
 ```xml
 <configuration>
-			<repository>demo/${project.artifactId}-app</repository>
-		</configuration>
+  <repository>demo/${project.artifactId}-app</repository>
+</configuration>
 ```
 e instala no docker local, assim sendo visível quando executado o comando docker images.
 
-###Docker(Executar Docker - Terminal)
+### Docker(Executar Docker - Terminal)
 
 1. docker images
-...lista as imagens do docker local
-2.  docker run -p 8080:8080 demo/demo-app
+... lista as imagens do docker local
+2. docker run -p 8080:8080 demo/demo-app
 ... esse comando executa o container da aplicação 
