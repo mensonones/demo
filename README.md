@@ -3,9 +3,9 @@ Repositório de um simples projeto para gerar uma imagem docker do mesmo.
 
 ## Dockerfile
 
-FROM java:8 
-MAINTAINER Emerson Vieira <mensones.1@gmail.com> 
-ADD target/demo-0.0.1-SNAPSHOT.jar // 
+FROM java:8  <br/>
+MAINTAINER Emerson Vieira <mensones.1@gmail.com>  <br/>
+ADD target/demo-0.0.1-SNAPSHOT.jar //  <br/>
 ENTRYPOINT ["java", "-jar", "/demo-0.0.1-SNAPSHOT.jar"] 
 
 1. FROM 
