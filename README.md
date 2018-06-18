@@ -42,6 +42,6 @@ Para gerar o artefato e a imagem docker da aplicação, use o comando: mvn clean
 ### Docker(Executar Docker - Terminal)
 
 1. docker images 
-* Lista as imagens do docker local)
+* Lista as imagens do docker local
 2. docker run -p 8080:8080 demo/demo-app 
 * Esse comando executa o container da aplicação
