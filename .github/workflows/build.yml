@@ -12,7 +12,7 @@ jobs:
 
       - uses: actions/setup-java@v4
         with:
-          java-version: '17'
+          java-version: '17.0.12'
           distribution: 'graalvm'
 
       - name: Build native Docker image
